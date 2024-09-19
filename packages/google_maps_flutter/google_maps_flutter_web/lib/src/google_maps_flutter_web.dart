@@ -138,6 +138,7 @@ class GoogleMapsPlugin extends GoogleMapsFlutterPlatform {
     CameraUpdate cameraUpdate, {
     required int mapId,
   }) async {
+    log(cameraUpdate.toJson().toString());
     return _map(mapId).moveCamera(cameraUpdate);
   }
 
